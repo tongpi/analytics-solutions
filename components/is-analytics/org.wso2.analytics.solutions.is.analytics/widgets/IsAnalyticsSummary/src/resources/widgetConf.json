@@ -1,5 +1,5 @@
 {
-  "name": "Is Analytics Summary",
+  "name": "身份服务分析简报",
   "id": "IsAnalyticsSummary",
   "thumbnailURL": "",
   "configs": {
@@ -11,7 +11,7 @@
     "options": [
       {
         "id": "widgetType",
-        "title": "Widget Type",
+        "title": "部件类型",
         "type": {
           "name": "ENUM",
           "possibleValues": [
@@ -24,7 +24,7 @@
       },
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "部件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []

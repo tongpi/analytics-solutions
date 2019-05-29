@@ -26,13 +26,13 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const bodyTexts = {
-    Overall: 'Analyze overall login attempts made via WSO2 Identity Server. '
-        + 'This includes information about overall flows of authentication took place through Identity Server.'
-        + 'A collection of authentication steps is considered as an overall attempt',
-    Local: 'Analyze local login attempts made via WSO2 Identity Server. '
+    Overall: '分析通过身份服务器进行的整体登录尝试. '
+        + '这包括有关通过身份服务进行的总体身份认证流的信息.'
+        + '一组身份验证步骤被认为是一种整体尝试',
+    Local: '分析通过身份服务器进行的本地登录尝试. '
         + 'Local login attempts include all login attempts which are done through resident IDP.'
         + 'These statistics will give an idea on the involvement of resident IDP in an authentication flow.',
-    Federated: 'Analyze federated login attempts made via WSO2 Identity Server.'
+    Federated: '分析通过身份服务器进行的联邦登录尝试.'
         + 'This will give an idea about the authentication steps took place via federated identity providers.',
 };
 
@@ -81,7 +81,7 @@ const pieChartConfig = {
 
 const numChartConfig = {
     x: 'totalLoginAttempts',
-    title: 'Total Login Attempts',
+    title: '登录尝试总次数',
     charts: [
         {
             type: 'number',
@@ -250,8 +250,8 @@ class IsAnalyticsSummary extends Widget {
                 <MuiThemeProvider theme={theme}>
                     <div style={divSpacings}>
                         <Typography variant="body1" gutterBottom align="center">
-                            Unable to fetch data from Siddhi data provider,
-                            Please check the data provider configurations.
+                            无法从Siddhi数据提供程序获取数据,
+                            请检查数据提供者配置.
                         </Typography>
                     </div>
                 </MuiThemeProvider>
@@ -302,7 +302,7 @@ class IsAnalyticsSummary extends Widget {
                                             align="center"
                                             style={{ color: colorGreen }}
                                         >
-                                            Success:
+                                            成功:
                                             {this.state.successPercentage}
                                         </Typography>
                                         <Typography
@@ -311,7 +311,7 @@ class IsAnalyticsSummary extends Widget {
                                             align="center"
                                             style={{ color: colorRed }}
                                         >
-                                            Failure:
+                                            失败:
                                             {this.state.failurePercentage}
                                         </Typography>
                                     </div>
@@ -343,7 +343,7 @@ class IsAnalyticsSummary extends Widget {
                                     variant="button"
                                     gutterBottom
                                 >
-                                    See More >>
+                                    详情 >>
                                 </Typography>
                             </Button>
                         </a>

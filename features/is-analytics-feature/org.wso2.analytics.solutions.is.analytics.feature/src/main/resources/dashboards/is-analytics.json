@@ -2,14 +2,14 @@
   "dashboard": {
     "url": "is-analytics",
     "owner": "admin",
-    "name": "IS Analytics",
-    "description": "WSO2 Identity Server Analytics Dashboard",
+    "name": "身份服务分析",
+    "description": "身份服务分析仪表板",
     "landingPage": "login_attempts",
     "parentId": "0",
     "pages": [
       {
         "id": "login_attempts",
-        "name": "Login Attempts",
+        "name": "登录尝试",
         "content": [
           {
             "type": "column",
@@ -24,7 +24,7 @@
                 "height": 15.0,
                 "content": [
                   {
-                    "title": "Date Time Range",
+                    "title": "时间范围",
                     "type": "component",
                     "component": "DateRangePicker",
                     "props": {
@@ -73,7 +73,7 @@
                     "width": 33.333333,
                     "content": [
                       {
-                        "title": "Is Analytics Summary",
+                        "title": "身份服务分析情况",
                         "type": "component",
                         "component": "IsAnalyticsSummary",
                         "props": {
@@ -90,7 +90,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Overall",
-                              "headerTitle": "Overall Login Attempts Summary"
+                              "headerTitle": "总体登录尝试情况"
                             }
                           },
                           "widgetID": "IsAnalyticsSummary"
@@ -111,7 +111,7 @@
                     "width": 33.333333,
                     "content": [
                       {
-                        "title": "Is Analytics Summary",
+                        "title": "身份服务分析情况",
                         "type": "component",
                         "component": "IsAnalyticsSummary",
                         "props": {
@@ -128,7 +128,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Local",
-                              "headerTitle": "Local Login Attempts Summary"
+                              "headerTitle": "本地登录尝试情况"
                             }
                           },
                           "widgetID": "IsAnalyticsSummary"
@@ -149,7 +149,7 @@
                     "width": 33.333334,
                     "content": [
                       {
-                        "title": "Is Analytics Summary",
+                        "title": "身份服务分析情况",
                         "type": "component",
                         "component": "IsAnalyticsSummary",
                         "props": {
@@ -166,7 +166,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Federated",
-                              "headerTitle": "Federated Login Attempts Summary"
+                              "headerTitle": "联邦登录情况分析"
                             }
                           },
                           "widgetID": "IsAnalyticsSummary"
@@ -203,7 +203,7 @@
                 "height": 6.0,
                 "content": [
                   {
-                    "title": "Date Time Range",
+                    "title": "时间范围",
                     "type": "component",
                     "component": "DateRangePicker",
                     "props": {
@@ -246,7 +246,7 @@
                 "height": 9.4,
                 "content": [
                   {
-                    "title": "IS Analytics User Preferences",
+                    "title": "用户偏好分析",
                     "type": "component",
                     "component": "IsAnalyticsUserPreferences",
                     "props": {
@@ -269,7 +269,7 @@
                         "isGenerated": false,
                         "options": {
                           "widgetType": "Overall",
-                          "headerTitle": "User Preferences - Overall"
+                          "headerTitle": "用户偏好 - 总体情况"
                         }
                       },
                       "widgetID": "IsAnalyticsUserPreferences"
@@ -296,7 +296,7 @@
                     "width": 33.3,
                     "content": [
                       {
-                        "title": "IS Analytics Attempts Over Time",
+                        "title": "身份服务分时分析",
                         "type": "component",
                         "component": "IsAnalyticsAttemptsOverTime",
                         "props": {
@@ -315,7 +315,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Overall",
-                              "headerTitle": "Overall Login Attempts Over Time"
+                              "headerTitle": "总体登录尝试分时分析"
                             }
                           },
                           "widgetID": "IsAnalyticsAttemptsOverTime"
@@ -336,7 +336,7 @@
                     "width": 16.7,
                     "content": [
                       {
-                        "title": "IS Analytics Compact Summary",
+                        "title": "身份分析简报",
                         "type": "component",
                         "component": "IsAnalyticsCompactSummary",
                         "props": {
@@ -354,7 +354,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Overall",
-                              "headerTitle": "Overall Login Attempts Compact Summary"
+                              "headerTitle": "总体登录尝试简报"
                             }
                           },
                           "widgetID": "IsAnalyticsCompactSummary"
@@ -375,7 +375,7 @@
                     "width": 50.0,
                     "content": [
                       {
-                        "title": "IS Analytics Login Attempts Map",
+                        "title": "登录尝试地图可视化分析",
                         "type": "component",
                         "component": "IsAnalyticsLoginAttemptsMap",
                         "props": {
@@ -394,7 +394,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Overall",
-                              "headerTitle": "Overall Login Attempts Map"
+                              "headerTitle": "总体登录尝试地图"
                             }
                           },
                           "widgetID": "IsAnalyticsLoginAttemptsMap"
@@ -423,7 +423,7 @@
                     "width": 50.0,
                     "content": [
                       {
-                        "title": "IS Analytics Attempts By Type",
+                        "title": "登录尝试分类分析",
                         "type": "component",
                         "component": "IsAnalyticsAttemptsByType",
                         "props": {
@@ -447,7 +447,7 @@
                             "options": {
                               "widgetType": "Overall",
                               "xAxis": "Service Provider",
-                              "headerTitle": "By Service Provider"
+                              "headerTitle": "按服务提供者"
                             }
                           },
                           "widgetID": "IsAnalyticsAttemptsByType"
@@ -468,7 +468,7 @@
                     "width": 50.0,
                     "content": [
                       {
-                        "title": "IS Analytics Attempts By Type",
+                        "title": "登录尝试分类分析",
                         "type": "component",
                         "component": "IsAnalyticsAttemptsByType",
                         "props": {
@@ -492,7 +492,7 @@
                             "options": {
                               "widgetType": "Overall",
                               "xAxis": "Username",
-                              "headerTitle": "By Username"
+                              "headerTitle": "按用户"
                             }
                           },
                           "widgetID": "IsAnalyticsAttemptsByType"
@@ -514,7 +514,7 @@
                 "height": 16.6,
                 "content": [
                   {
-                    "title": "IS Analytics Messages",
+                    "title": "身份服务消息分析",
                     "type": "component",
                     "component": "IsAnalyticsMessages",
                     "props": {
@@ -532,7 +532,7 @@
                         "isGenerated": false,
                         "options": {
                           "widgetType": "Overall",
-                          "headerTitle": "Overall Login Attempts Messages"
+                          "headerTitle": "总体登录尝试消息"
                         }
                       },
                       "widgetID": "IsAnalyticsMessages"
@@ -567,7 +567,7 @@
                 "height": 6.0,
                 "content": [
                   {
-                    "title": "Date Time Range",
+                    "title": "时间范围",
                     "type": "component",
                     "component": "DateRangePicker",
                     "props": {
@@ -610,7 +610,7 @@
                 "height": 9.4,
                 "content": [
                   {
-                    "title": "IS Analytics User Preferences",
+                    "title": "用户偏好",
                     "type": "component",
                     "component": "IsAnalyticsUserPreferences",
                     "props": {
@@ -635,7 +635,7 @@
                         "isGenerated": false,
                         "options": {
                           "widgetType": "Local",
-                          "headerTitle": "User Preferences - Local"
+                          "headerTitle": "用户偏好 - 本地"
                         }
                       },
                       "widgetID": "IsAnalyticsUserPreferences"
@@ -662,7 +662,7 @@
                     "width": 33.3,
                     "content": [
                       {
-                        "title": "IS Analytics Attempts Over Time",
+                        "title": "身份服务分时分析",
                         "type": "component",
                         "component": "IsAnalyticsAttemptsOverTime",
                         "props": {
@@ -681,7 +681,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Local",
-                              "headerTitle": "Local Login Attempts Over Time"
+                              "headerTitle": "本地登录分时分析"
                             }
                           },
                           "widgetID": "IsAnalyticsAttemptsOverTime"
@@ -702,7 +702,7 @@
                     "width": 16.7,
                     "content": [
                       {
-                        "title": "IS Analytics Compact Summary",
+                        "title": "是否分析简报",
                         "type": "component",
                         "component": "IsAnalyticsCompactSummary",
                         "props": {
@@ -720,7 +720,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Local",
-                              "headerTitle": "Local Login Attempts Compact Summary"
+                              "headerTitle": "本地登录简报"
                             }
                           },
                           "widgetID": "IsAnalyticsCompactSummary"
@@ -741,7 +741,7 @@
                     "width": 50.0,
                     "content": [
                       {
-                        "title": "IS Analytics Login Attempts Map",
+                        "title": "登录尝试地图",
                         "type": "component",
                         "component": "IsAnalyticsLoginAttemptsMap",
                         "props": {
@@ -760,7 +760,7 @@
                             "isGenerated": false,
                             "options": {
                               "widgetType": "Local",
-                              "headerTitle": "Local Login Attempts Map"
+                              "headerTitle": "本地登录尝试地图"
                             }
                           },
                           "widgetID": "IsAnalyticsLoginAttemptsMap"
@@ -1066,7 +1066,7 @@
                 "height": 9.4,
                 "content": [
                   {
-                    "title": "IS Analytics User Preferences",
+                    "title": "用户偏好",
                     "type": "component",
                     "component": "IsAnalyticsUserPreferences",
                     "props": {
@@ -1157,7 +1157,7 @@
                     "width": 16.7,
                     "content": [
                       {
-                        "title": "IS Analytics Compact Summary",
+                        "title": "是否分析简报",
                         "type": "component",
                         "component": "IsAnalyticsCompactSummary",
                         "props": {
@@ -1458,7 +1458,7 @@
                                 "width": 88.02469135802468,
                                 "content": [
                                   {
-                                    "title": "Date Time Range",
+                                    "title": "时间范围",
                                     "type": "component",
                                     "component": "DateRangePicker",
                                     "props": {
@@ -1500,7 +1500,7 @@
                                 "width": 11.975308641975314,
                                 "content": [
                                   {
-                                    "title": "IS Analytics Active Sessions",
+                                    "title": "在线会话分析",
                                     "type": "component",
                                     "component": "UniversalWidget",
                                     "props": {
@@ -1531,7 +1531,7 @@
                             "height": 35.838184465546526,
                             "content": [
                               {
-                                "title": "IS Analytics Session Count Over Time",
+                                "title": "分时会话分析",
                                 "type": "component",
                                 "component": "IsAnalyticsSessionCountOverTime",
                                 "props": {
@@ -1572,7 +1572,7 @@
                                 "width": 33.371074429414215,
                                 "content": [
                                   {
-                                    "title": "IS Analytics Top Longest Session",
+                                    "title": "超长会话TopN分析",
                                     "type": "component",
                                     "component": "IsAnalyticsTopLongestSession",
                                     "props": {
@@ -1606,7 +1606,7 @@
                                 "width": 32.69003209412005,
                                 "content": [
                                   {
-                                    "title": "IS Analytics AverageSession Duration",
+                                    "title": "平均在线时长分析",
                                     "type": "component",
                                     "component": "IsAnalyticsAverageSessionDuration",
                                     "props": {
@@ -1640,7 +1640,7 @@
                                 "width": 33.938893476465736,
                                 "content": [
                                   {
-                                    "title": "IS Analytics Session Count",
+                                    "title": "会话统计",
                                     "type": "component",
                                     "component": "IsAnalyticsSessionCount",
                                     "props": {
@@ -1730,7 +1730,7 @@
                 "height": 20.27972027972028,
                 "content": [
                   {
-                    "title": "Date Time Range",
+                    "title": "时间范围",
                     "type": "component",
                     "component": "DateRangePicker",
                     "props": {
@@ -1772,7 +1772,7 @@
                 "height": 79.72027972027972,
                 "content": [
                   {
-                    "title": "IS Analytics Alerts",
+                    "title": "身份分析告警",
                     "type": "component",
                     "component": "UniversalWidget",
                     "props": {
@@ -1822,7 +1822,7 @@
       },
       {
         "id": "suspicious_login",
-        "name": "Suspicious Login Alerts",
+        "name": "可疑登录告警",
         "content": [
           {
             "type": "column",
@@ -1836,7 +1836,7 @@
                 "height": 19.46386946386946,
                 "content": [
                   {
-                    "title": "Date Time Range",
+                    "title": "时间范围",
                     "type": "component",
                     "component": "DateRangePicker",
                     "props": {
@@ -1879,7 +1879,7 @@
                 "height": 80.53613053613053,
                 "content": [
                   {
-                    "title": "IS Analytics Suspicious Login Alerts",
+                    "title": "可疑登录告警",
                     "type": "component",
                     "component": "UniversalWidget",
                     "props": {
@@ -1928,7 +1928,7 @@
       },
       {
         "id": "long_session",
-        "name": "Long Session Alerts",
+        "name": "超长会话告警",
         "content": [
           {
             "type": "column",
@@ -1984,7 +1984,7 @@
                 "height": 80.18648018648018,
                 "content": [
                   {
-                    "title": "IS Analytics Abnormal Long Sessions Alert",
+                    "title": "异常超长会话告警",
                     "type": "component",
                     "component": "UniversalWidget",
                     "props": {
@@ -2131,7 +2131,7 @@
         }
       },
       {
-        "name": "IS Analytics Alerts",
+        "name": "是否分析警告",
         "id": "IS-Analytics-Alerts",
         "chartConfig": {
           "charts": [
@@ -2209,7 +2209,7 @@
         }
       },
       {
-        "name": "IS Analytics Active Sessions",
+        "name": "在线会话分析",
         "id": "IS-Analytics-Active-Sessions",
         "chartConfig": {
           "x": "active",
