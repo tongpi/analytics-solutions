@@ -228,7 +228,7 @@ class EIAnalyticsMessageFlow extends Widget {
         let width = this.state.width;
         let height = this.state.height;
         if (graphWidth === 0 || graphHeight === 0) {
-            console.error("Invalid graph dimension. Width or height is zero.");
+            console.error("无效的图形尺寸。宽度或高度为零。");
             return;
         }
         let zoomScale = Math.min(width / graphWidth, height / graphHeight);
@@ -521,7 +521,7 @@ class EIAnalyticsMessageFlow extends Widget {
                     );
             })
             .catch((error) => {
-                console.error("Unable to load configurations of " + this.props.widgetID + " widget.");
+                console.error("不能加载小部件" + this.props.widgetID + " 配置。");
             });
     }
 
@@ -553,7 +553,7 @@ class EIAnalyticsMessageFlow extends Widget {
                         );
                 })
                 .catch(() => {
-                    console.error("Unable to load widget configurations");
+                    console.error("无法加载小部件配置");
                 });
         };
     }
@@ -592,7 +592,7 @@ class EIAnalyticsMessageFlow extends Widget {
                             );
                     })
                     .catch(() => {
-                        console.error("Unable to load widget configurations");
+                        console.error("无法加载小部件配置");
                     });
                 /*
                 DB call for data might not return anything. But still the graph is drawn for empty data scenario.
@@ -889,7 +889,7 @@ class EIAnalyticsMessageFlow extends Widget {
                         );
                     })
                     .catch((error) => {
-                        console.error("Unable to load widget configurations");
+                        console.error("无法加载小部件配置");
                     });
             }
         }
@@ -1184,8 +1184,8 @@ class EIAnalyticsMessageFlow extends Widget {
     getEmptyRecordsText() {
         return '<div class="status-message">' +
             '<div class="message message-info">' +
-            '<h4><i class="icon fw fw-info"></i>No records found</h4>' +
-            '<p>Please select a valid date range to view stats.</p>' +
+            '<h4><i class="icon fw fw-info"></i>没有发现数据</h4>' +
+            '<p>请选择一个有效的日期范围来查看统计信息。</p>' +
             '</div>' +
             '</div>';
     };
@@ -1261,22 +1261,22 @@ class EIAnalyticsMessageFlow extends Widget {
         let pageName = (page == null) ? '' : page;
         switch (pageName) {
             case 'api':
-                return 'Please select an API and a valid date range to view stats.';
+                return '请选择一个API和一个有效的日期范围来查看统计信息。';
                 break;
             case 'proxy':
-                return 'Please select a Proxy Service and a valid date range to view stats.';
+                return '请选择一个代理服务和一个有效的日期范围来查看统计信息。';
                 break;
             case 'sequence':
-                return 'Please select a Sequence and a valid date range to view stats.';
+                return '请选择一个序列和一个有效的日期范围来查看统计信息。';
                 break;
             case 'endpoint':
-                return 'Please select an Endpoint and a valid date range to view stats.';
+                return '请选择要查看统计信息的端点和有效日期范围。';
                 break;
             case 'inboundEndpoint':
-                return 'Please select an Inbound Endpoint and a valid date range to view stats.';
+                return '请选择一个入站端点和一个有效的日期范围来查看统计信息。';
                 break;
             default:
-                return 'Please select a valid date range to view stats';
+                return '请选择一个有效的日期范围来查看统计信息';
         }
         ;
     }
@@ -1311,7 +1311,7 @@ class EIAnalyticsMessageFlow extends Widget {
                                         (<div class="status-message">
                                             <div class="message message-info">
                                                 <h4 style={centerDiv}>
-                                                    <i class="icon fw fw-info"></i> No records found</h4>
+                                                    <i class="icon fw fw-info"></i> 没有发现数据</h4>
                                                 <p style={centerDiv}>{this.noParameters()}</p>
                                             </div>
                                         </div>) : null
