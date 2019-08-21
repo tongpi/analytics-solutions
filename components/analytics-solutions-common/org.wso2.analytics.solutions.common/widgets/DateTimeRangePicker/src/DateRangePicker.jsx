@@ -576,13 +576,13 @@ export default class DateRangePicker extends Widget {
                         }}
                     >
                         {`${startTime}`}
-                        <span style={{ color: '#828282' }}> 到 </span>
+                        <span style={{ color: '#828282' }}> 至 </span>
                         {`${endTime}`}
                         <span style={{ color: '#828282' }}> 每 </span>
                     </div>
                     {this.generateGranularitySelector()}
                     <FlatButton
-                        label='Auto-Sync'
+                        label='自动同步'
                         icon={this.state.btnType}
                         onClick={this.autoSyncClick}
                         style={{
@@ -719,9 +719,7 @@ export default class DateRangePicker extends Widget {
         } else {
             supportedGranularities = this.getSupportedGranularitiesForFixed(this.state.granularityMode);
         }
-        /**
-         * 这里处理方式为添加一个viewTranMap 对象用于只汉化用户界面显示部分，不影响程序传值的逻辑判断
-         */
+        // 这里处理方式为添加一个viewTranMap 对象用于只汉化用户界面显示部分，不影响程序传值的逻辑判断
         return (this.getAvailableGranularities()).map(view => {
 
             const viewTranMap = { 'Second': '秒', 'Minute': '分钟', 'Hour': '小时', 'Day': '天', 'Month': '月', 'Year': '年' };
