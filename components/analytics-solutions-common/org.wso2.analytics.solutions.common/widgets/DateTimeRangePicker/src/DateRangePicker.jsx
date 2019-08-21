@@ -576,9 +576,9 @@ export default class DateRangePicker extends Widget {
                         }}
                     >
                         {`${startTime}`}
-                        <span style={{ color: '#828282' }}> to </span>
+                        <span style={{ color: '#828282' }}> 到 </span>
                         {`${endTime}`}
-                        <span style={{ color: '#828282' }}> per </span>
+                        <span style={{ color: '#828282' }}> 每 </span>
                     </div>
                     {this.generateGranularitySelector()}
                     <FlatButton
@@ -719,14 +719,20 @@ export default class DateRangePicker extends Widget {
         } else {
             supportedGranularities = this.getSupportedGranularitiesForFixed(this.state.granularityMode);
         }
+        /**
+         * 这里处理方式为添加一个viewTranMap 对象用于只汉化用户界面显示部分，不影响程序传值的逻辑判断
+         */
+        return (this.getAvailableGranularities()).map(view => {
 
-        return (this.getAvailableGranularities()).map(view => (
-            <MenuItem
-                value={view.toLowerCase()}
-                primaryText={view}
-                disabled={supportedGranularities.indexOf(view) === -1}
-            />
-        ));
+            const viewTranMap = { 'Second': '秒', 'Minute': '分钟', 'Hour': '小时', 'Day': '天', 'Month': '月', 'Year': '年' };
+            return (
+                <MenuItem
+                    value={view.toLowerCase()}
+                    primaryText={viewTranMap[view]}
+                    disabled={supportedGranularities.indexOf(view) === -1}
+                />
+            )
+        });
     }
 
     capitalizeCaseFirstChar(str) {
