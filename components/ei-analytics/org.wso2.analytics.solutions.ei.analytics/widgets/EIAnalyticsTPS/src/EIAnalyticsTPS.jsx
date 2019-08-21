@@ -125,7 +125,7 @@ class EIAnalyticsTPS extends Widget {
                     );
             })
             .catch((error) => {
-                console.error("Unable to load configurations of " + this.props.widgetID + " widget.");
+                console.error("不能加载小部件 " + this.props.widgetID + " 的配置。");
             });
     }
 
@@ -195,8 +195,8 @@ class EIAnalyticsTPS extends Widget {
         return (
             <div class="status-message" style={{color: 'white', marginLeft: 'auto', marginRight: 'auto'}}>
                 <div class="message message-info">
-                    <h4><i class="icon fw fw-info"></i> No records found</h4>
-                    <p>Please select a valid date range to view stats.</p>
+                    <h4><i class="icon fw fw-info"></i> 没有发现数据</h4>
+                    <p>请选择一个有效的日期范围来查看统计信息。</p>
                 </div>
             </div>
         );
