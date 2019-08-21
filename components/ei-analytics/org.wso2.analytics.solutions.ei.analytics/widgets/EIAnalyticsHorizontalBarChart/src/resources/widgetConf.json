@@ -1,5 +1,5 @@
 {
-  "name": "EI Analytics Horizontal Bar Chart",
+  "name": "EI 水平分析图",
   "id": "EIAnalyticsHorizontalBarChart",
   "thumbnailURL": "",
   "configs": {
@@ -23,7 +23,7 @@
     "options": [
       {
         "id": "Component Type Selection",
-        "title": "Component Type",
+        "title": "组件类型",
         "type": {
           "name": "ENUM",
           "possibleValues": [
@@ -40,7 +40,7 @@
       },
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "小部件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []
