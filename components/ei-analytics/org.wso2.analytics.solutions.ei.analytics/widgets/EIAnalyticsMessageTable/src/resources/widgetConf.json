@@ -1,5 +1,5 @@
 {
-  "name": "EI Analytics Message Table",
+  "name": "EI 消息表格分析",
   "id": "EIAnalyticsMessageTable",
   "thumbnailURL": "",
   "configs": {
@@ -23,12 +23,12 @@
     "options": [
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "小部件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []
         },
-        "defaultValue": "EI Analytics Message Table"
+        "defaultValue": "EI 消息表格分析"
       }
     ]
   }
