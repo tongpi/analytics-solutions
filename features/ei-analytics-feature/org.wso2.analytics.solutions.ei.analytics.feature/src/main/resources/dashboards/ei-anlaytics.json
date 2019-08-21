@@ -24,7 +24,7 @@
                                 "width": 100.0,
                                 "content": [
                                     {
-                                        "title": "Date Time Range",
+                                        "title": "日期时间范围",
                                         "type": "component",
                                         "component": "DateRangePicker",
                                         "props": {
@@ -467,7 +467,7 @@
                                         "width": 66.431282415738,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "日期时间范围",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -821,7 +821,7 @@
                                         "width": 66.83472833083164,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "日期时间范围",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -1175,7 +1175,7 @@
                                         "width": 66.83472833083164,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "日期时间范围",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -1530,7 +1530,7 @@
                                         "width": 66.88513170906766,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "日期时间范围",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -1846,7 +1846,7 @@
                                         "height": 9.090802872124586,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "日期时间范围",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -2362,7 +2362,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "日期时间范围",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
