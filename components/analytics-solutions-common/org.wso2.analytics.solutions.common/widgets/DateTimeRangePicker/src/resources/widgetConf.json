@@ -1,6 +1,6 @@
 {
   "id": "DateRangePicker",
-  "name": "日期时间范围",
+  "name": "时间过滤组件",
   "thumbnailURL": "",
   "configs": {
     "pubsub": {
