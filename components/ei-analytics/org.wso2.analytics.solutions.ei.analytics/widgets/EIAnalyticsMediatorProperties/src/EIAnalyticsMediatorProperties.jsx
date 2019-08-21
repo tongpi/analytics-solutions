@@ -310,12 +310,12 @@ class EIAnalyticsMediatorProperties extends Widget {
                     <tr>
                         <th>
                             <h4 style={centerDiv}>
-                                <center>Before</center>
+                                <center>以前</center>
                             </h4>
                         </th>
                         <th>
                             <h4 style={centerDiv}>
-                                <center>After</center>
+                                <center>之后</center>
                             </h4>
                         </th>
                     </tr>
