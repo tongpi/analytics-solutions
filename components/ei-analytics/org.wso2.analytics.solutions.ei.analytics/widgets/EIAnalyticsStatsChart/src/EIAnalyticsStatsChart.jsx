@@ -369,22 +369,22 @@ class EIAnalyticsStatsChart extends Widget {
         let page = this.getCurrentPage();
         switch (page) {
             case 'api':
-                return 'Please select an API and a valid date range to view stats.';
+                return '请选择一个API和一个有效的日期范围来查看统计信息。';
                 break;
             case 'proxy':
-                return 'Please select a Proxy Service and a valid date range to view stats.';
+                return '请选择一个代理服务和一个有效的日期范围来查看统计信息。';
                 break;
             case 'sequences':
-                return 'Please select a Sequence and a valid date range to view stats.';
+                return '请选择一个序列和一个有效的日期范围来查看统计信息。';
                 break;
             case 'endpoint':
-                return 'Please select an Endpoint and a valid date range to view stats.';
+                return '请选择要查看统计信息的端点和有效日期范围。';
                 break;
             case 'inboundEndpoint':
-                return 'Please select an Inbound Endpoint and a valid date range to view stats.';
+                return '请选择一个入站端点和一个有效的日期范围来查看统计信息。';
                 break;
             default:
-                return 'Please select a valid date range to view stats';
+                return '请选择一个有效的日期范围来查看统计信息';
         }
     }
 
