@@ -210,11 +210,11 @@ class EIAnalyticsHorizontalBarChart extends Widget {
             }}>
                 <div className="message message-info">
                     <h4>
-                        <i class="icon fw fw-info"/> No records found</h4>
+                        <i class="icon fw fw-info"/> 没有数据</h4>
                     <p>
                         {
-                            this.isConfLoadError ? 'Error loading widget configuration file' :
-                                'Please select a valid date range to view stats.'
+                            this.isConfLoadError ? '加载小部件配置文件时出错' :
+                                '请选择一个有效的日期范围来查看统计信息。'
                         }
                     </p>
                 </div>

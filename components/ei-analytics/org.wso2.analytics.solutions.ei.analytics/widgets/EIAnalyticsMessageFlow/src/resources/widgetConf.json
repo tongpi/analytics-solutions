@@ -1,5 +1,5 @@
 {
-  "name": "EI Analytics Message Flow",
+  "name": "EI消息流分析",
   "id": "EIAnalyticsMessageFlow",
   "thumbnailURL": "",
   "configs": {
@@ -30,12 +30,12 @@
     "options": [
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "小部件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []
         },
-        "defaultValue": "Message Flow"
+        "defaultValue": "消息流"
       }
     ]
   }

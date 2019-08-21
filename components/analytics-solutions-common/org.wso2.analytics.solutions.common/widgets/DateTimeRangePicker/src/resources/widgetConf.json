@@ -1,6 +1,6 @@
 {
   "id": "DateRangePicker",
-  "name": "Date Time Range",
+  "name": "时间过滤组件",
   "thumbnailURL": "",
   "configs": {
     "pubsub": {
@@ -28,7 +28,7 @@
       },
       {
         "id": "defaultValue",
-        "title": "Default Range",
+        "title": "默认范围",
         "type": {
           "name": "ENUM",
           "possibleValues": [
@@ -47,7 +47,7 @@
       },
       {
         "id": "availableGranularities",
-        "title": "Available Granularities",
+        "title": "可用粒度",
         "type": {
           "name": "ENUM",
           "possibleValues": [
@@ -63,7 +63,7 @@
       },
       {
         "id": "autoSyncInterval",
-        "title": "Auto-Sync Interval (Seconds)",
+        "title": "内部自动同步(秒)",
         "type": {
           "name": "TEXT"
         },

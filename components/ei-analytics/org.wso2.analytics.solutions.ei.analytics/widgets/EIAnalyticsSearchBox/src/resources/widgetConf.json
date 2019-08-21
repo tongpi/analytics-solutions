@@ -1,5 +1,5 @@
 {
-  "name": "EI Analytics Search Box",
+  "name": "EI分析搜索框",
   "id": "EIAnalyticsSearchBox",
   "thumbnailURL": "",
   "configs": {
@@ -37,12 +37,12 @@
       },
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "小部件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []
         },
-        "defaultValue": "EI Analytics Search Box"
+        "defaultValue": "EI分析搜索框"
       }
     ]
   }

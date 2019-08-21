@@ -108,14 +108,14 @@ export default class GranularityModeSelector extends React.Component {
             ? (
                 <FlatButton
                     onClick={this.handleClick}
-                    label='Custom'
+                    label='自定义'
                     style={{ borderBottom: theme.name === 'dark' ? '1px solid red' : '1px solid gray' }}
                 />
             )
             : (
                 <FlatButton
                     onClick={this.handleClick}
-                    label='Custom'
+                    label='自定义'
                     style={{ borderBottom: 'none' }}
                 />
             );
@@ -238,12 +238,19 @@ export default class GranularityModeSelector extends React.Component {
         const { getTimeRangeName, getDateTimeRangeInfo, theme } = this.props;
         const selectedTimeRange = getTimeRangeName(getDateTimeRangeInfo().tr) || '';
         const options = granularityMode === 'high' ? this.getHighGranularityOptions() : this.getLowGranularityOptions();
+        // 这里处理方式为添加一个viewTranMap 对象用于只汉化用户界面显示部分，不影响程序传值的逻辑判断
+        let viewTranMap = {}
+        if (granularityMode === 'high') {
+            viewTranMap = { '1 Day': '1 天', '7 Days': '7 天', '1 Month': '1 月', '3 Months': '3 月', '6 Months': '6 月', '1 Year': '1 年' };
+        } else {
+            viewTranMap = { '1 Min': '1 分钟', '15 Min': '15 分钟', '1 Hour': '1 小时', '1 Day': '1 天' }
+        }
         return options.map((option) => {
             if (selectedTimeRange === option) {
                 return (
                     <FlatButton
                         onClick={() => this.onGranularityModeChange(option)}
-                        label={option}
+                        label={viewTranMap[option]}
                         style={{ borderBottom: theme.name === 'dark' ? '1px solid red' : '1px solid gray' }}
                     />
                 );
@@ -251,7 +258,7 @@ export default class GranularityModeSelector extends React.Component {
                 return (
                     <FlatButton
                         onClick={() => this.onGranularityModeChange(option)}
-                        label={option}
+                        label={viewTranMap[option]}
                         style={{ borderBottom: 'none' }}
                     />
                 );
@@ -273,7 +280,7 @@ export default class GranularityModeSelector extends React.Component {
                     <span
                         style={{ marginRight: 10 }}
                     >
-                        Last :
+                        最近 :
                     </span>
                     {this.generateTabs(granularityMode)}
                     {this.generateGranularityModeSwitchButton(granularityMode)}

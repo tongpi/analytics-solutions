@@ -428,7 +428,7 @@ class EIAnalyticsSearchBox extends Widget {
                                 paddingTop: 5,
                             }}>
                             <div>
-                                Filter by {this.formatPageName(this.pageName)}
+                                过滤条件 {this.formatPageName(this.pageName)}
                             </div>
                             <div>
                                 <Select
@@ -445,7 +445,7 @@ class EIAnalyticsSearchBox extends Widget {
                                     components={components}
                                     value={this.state.selectedOption}
                                     onChange={this.handleChange}
-                                    placeholder='Select option'
+                                    placeholder='请选择'
                                 />
                             </div>
                         </div>

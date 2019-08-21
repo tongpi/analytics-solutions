@@ -123,12 +123,16 @@ export default class CustomTimeRangeSelector extends React.Component {
     }
 
     generateGranularityMenuItems() {
-        return (this.getSelectedGranularities()).map(view => (
-            <MenuItem
-                value={view.toLowerCase()}
-                primaryText={view}
-            />
-        ));
+        return (this.getSelectedGranularities()).map(view => {
+            // 这里处理方式为添加一个viewTranMap 对象用于只汉化用户界面显示部分，不影响程序传值的逻辑判断
+            const viewTranMap = { 'Second': '秒', 'Minute': '分钟', 'Hour': '小时', 'Day': '天', 'Month': '月', 'Year': '年' };
+            return (
+                <MenuItem
+                    value={view.toLowerCase()}
+                    primaryText={viewTranMap[view]}
+                />
+            )
+            });
     }
 
     publishCustomTimeRange() {
@@ -148,7 +152,7 @@ export default class CustomTimeRangeSelector extends React.Component {
                 <div
                     style={{ marginBottom: 10 }}
                 >
-                    Per
+                    每
                     <br />
                     <SelectField
                         className="perUnderline"
@@ -167,7 +171,7 @@ export default class CustomTimeRangeSelector extends React.Component {
                             float: 'left',
                         }}
                     >
-                        From
+                        从
                         <br />
                         <DateTimePicker
                             onChange={this.handleStartTimeChange}
@@ -181,7 +185,7 @@ export default class CustomTimeRangeSelector extends React.Component {
                             float: 'right',
                         }}
                     >
-                        To
+                        至
                         <br />
                         <DateTimePicker
                             onChange={this.handleEndTimeChange}
@@ -191,7 +195,7 @@ export default class CustomTimeRangeSelector extends React.Component {
                     </div>
                 </div>
                 {this.state.invalidDateRange ? <div style={{color: '#dc3545', paddingTop: 10}}>
-                    Invalid date range, Please select a valid date range. </div> : ''}
+                    无效的日期范围，请重新选择。 </div> : ''}
                 <RaisedButton
                     primary
                     style={{
@@ -202,7 +206,7 @@ export default class CustomTimeRangeSelector extends React.Component {
                     disabled={this.state.invalidDateRange}
                     onClick={this.publishCustomTimeRange}
                 >
-                    Apply
+                    应用
                 </RaisedButton>
             </div>
         );

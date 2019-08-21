@@ -1,5 +1,5 @@
 {
-  "name": "EI Analytics Stats Chart",
+  "name": "EI 状态分析图",
   "id": "EIAnalyticsStatsChart",
   "thumbnailURL": "",
   "configs": {
@@ -25,12 +25,12 @@
     "options": [
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "小插件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []
         },
-        "defaultValue": "EI Analytics Stats Chart"
+        "defaultValue": "EI 状态分析图"
       }
     ]
   }

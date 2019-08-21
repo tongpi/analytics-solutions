@@ -1,5 +1,5 @@
 {
-  "name": "EI Analytics Mediator Properties",
+  "name": "EI 中介属情分析",
   "id": "EIAnalyticsMediatorProperties",
   "thumbnailURL": "",
   "configs": {
@@ -25,12 +25,12 @@
     "options": [
       {
         "id": "headerTitle",
-        "title": "Widget Display Name",
+        "title": "小插件显示名称",
         "type": {
           "name": "TEXT",
           "possibleValues": []
         },
-        "defaultValue": "EI Analytics Mediator Properties"
+        "defaultValue": "EI 中介属情分析"
       }
     ]
   }

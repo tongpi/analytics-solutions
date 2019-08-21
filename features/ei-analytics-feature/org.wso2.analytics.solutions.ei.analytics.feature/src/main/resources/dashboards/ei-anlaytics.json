@@ -2,14 +2,14 @@
     "dashboard": {
         "url": "eianalytics",
         "owner": "admin",
-        "name": "Enterprise Integrator Analytics",
-        "description": "A dashboard to display Enterprise Integrator Analytics",
+        "name": "数据交换监控系统",
+        "description": "数据交换监控系统",
         "landingPage": "overview",
         "parentId": "0",
         "pages": [
             {
                 "id": "overview",
-                "name": "Overview",
+                "name": "首页",
                 "content": [
                     {
                         "type": "column",
@@ -24,7 +24,7 @@
                                 "width": 100.0,
                                 "content": [
                                     {
-                                        "title": "Date Time Range",
+                                        "title": "时间过滤组件",
                                         "type": "component",
                                         "component": "DateRangePicker",
                                         "props": {
@@ -65,7 +65,7 @@
                                 "height": 26.072632492979032,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Stats Chart",
+                                        "title": "EI 状态分析图",
                                         "type": "component",
                                         "component": "EIAnalyticsStatsChart",
                                         "props": {
@@ -81,7 +81,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Request Count"
+                                                    "headerTitle": "请求次数"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsStatsChart"
@@ -108,7 +108,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "EI Analytics TPS",
+                                                "title": "EI TPS 分析",
                                                 "type": "component",
                                                 "component": "EIAnalyticsTPS",
                                                 "props": {
@@ -127,7 +127,7 @@
                                                         },
                                                         "isGenerated": false,
                                                         "options": {
-                                                            "headerTitle": "Overall TPS"
+                                                            "headerTitle": "总体 TPS"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsTPS"
@@ -147,7 +147,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Overall Message Count]",
+                                                "title": "[总体调用次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -185,7 +185,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Overall Message Count"
+                                                            "headerTitle": "总体调用次数"
                                                         }
                                                     },
                                                     "widgetID": "Overall-Message-Count"
@@ -214,7 +214,7 @@
                                         "width": 49.92917847025496,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Horizontal Bar Chart",
+                                                "title": "EI 水平分析图",
                                                 "type": "component",
                                                 "component": "EIAnalyticsHorizontalBarChart",
                                                 "props": {
@@ -231,7 +231,7 @@
                                                         "isGenerated": false,
                                                         "options": {
                                                             "Component Type Selection": "proxy service",
-                                                            "headerTitle": "Top Proxy Services by Request Count"
+                                                            "headerTitle": "按请求次数排列代理服务"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsHorizontalBarChart"
@@ -251,7 +251,7 @@
                                         "width": 50.07082152974505,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Horizontal Bar Chart",
+                                                "title": "EI 水平分析图",
                                                 "type": "component",
                                                 "component": "EIAnalyticsHorizontalBarChart",
                                                 "props": {
@@ -268,7 +268,7 @@
                                                         "isGenerated": false,
                                                         "options": {
                                                             "Component Type Selection": "api",
-                                                            "headerTitle": "Top APIs by Request Count"
+                                                            "headerTitle": "按请求次数排列API服务"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsHorizontalBarChart"
@@ -297,7 +297,7 @@
                                         "width": 29.989094874591057,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Horizontal Bar Chart",
+                                                "title": "EI 水平分析图",
                                                 "type": "component",
                                                 "component": "EIAnalyticsHorizontalBarChart",
                                                 "props": {
@@ -314,7 +314,7 @@
                                                         "isGenerated": false,
                                                         "options": {
                                                             "Component Type Selection": "endpoint",
-                                                            "headerTitle": "Top Endpoints by Request Count"
+                                                            "headerTitle": "按请求次数排列端点服务"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsHorizontalBarChart"
@@ -334,7 +334,7 @@
                                         "width": 35.176781902660125,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Horizontal Bar Chart",
+                                                "title": "EI 水平分析图",
                                                 "type": "component",
                                                 "component": "EIAnalyticsHorizontalBarChart",
                                                 "props": {
@@ -351,7 +351,7 @@
                                                         "isGenerated": false,
                                                         "options": {
                                                             "Component Type Selection": "sequence",
-                                                            "headerTitle": "Top Sequences by Request Count"
+                                                            "headerTitle": "按请求次数排列序列"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsHorizontalBarChart"
@@ -371,7 +371,7 @@
                                         "width": 34.834123222748815,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Horizontal Bar Chart",
+                                                "title": "EI 水平分析图",
                                                 "type": "component",
                                                 "component": "EIAnalyticsHorizontalBarChart",
                                                 "props": {
@@ -388,7 +388,7 @@
                                                         "isGenerated": false,
                                                         "options": {
                                                             "Component Type Selection": "inbound endpoint",
-                                                            "headerTitle": "Top Inbound Endpoints by Request Count"
+                                                            "headerTitle": "按请求次数排列入站序列"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsHorizontalBarChart"
@@ -410,7 +410,7 @@
             },
             {
                 "id": "proxy",
-                "name": "Proxy Services",
+                "name": "代理服务",
                 "content": [
                     {
                         "type": "column",
@@ -431,7 +431,7 @@
                                         "height": 7.849504987941964,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Search Box",
+                                                "title": "EI 查询条件",
                                                 "type": "component",
                                                 "component": "EIAnalyticsSearchBox",
                                                 "props": {
@@ -467,7 +467,7 @@
                                         "width": 66.431282415738,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "时间过滤",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -510,7 +510,7 @@
                                 "height": 21.27257485911709,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Stats Chart",
+                                        "title": "EI 请求次数",
                                         "type": "component",
                                         "component": "EIAnalyticsStatsChart",
                                         "props": {
@@ -530,7 +530,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Proxy Request Count"
+                                                    "headerTitle": "代理请求次数"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsStatsChart"
@@ -557,7 +557,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Proxy Message Count]",
+                                                "title": "[代理请求次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -602,7 +602,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Proxy Message Count"
+                                                            "headerTitle": "代理请求次数"
                                                         }
                                                     },
                                                     "widgetID": "Proxy-Message-Count"
@@ -622,7 +622,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Proxy Message Latency]",
+                                                "title": "[代理请求延迟情况]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -667,7 +667,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Proxy Message Latency"
+                                                            "headerTitle": "代理请求延迟情况"
                                                         }
                                                     },
                                                     "widgetID": "Proxy-Message-Latency"
@@ -689,7 +689,7 @@
                                 "height": 21.90978006123472,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Table",
+                                        "title": "EI 请求详细信息",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageTable",
                                         "props": {
@@ -726,7 +726,7 @@
                                 "height": 35.45131984714732,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Flow",
+                                        "title": "EI 信息流图",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageFlow",
                                         "props": {
@@ -744,7 +744,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                  "headerTitle": "Message Flow"
+                                                  "headerTitle": "信息流图"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageFlow"
@@ -762,7 +762,7 @@
                 ],
                 "height": 1994.0
             },
-            {
+			{
                 "id": "api",
                 "name": "API",
                 "content": [
@@ -785,7 +785,7 @@
                                         "height": 10.861092670659161,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Search Box",
+                                                "title": "EI 查询条件",
                                                 "type": "component",
                                                 "component": "EIAnalyticsSearchBox",
                                                 "props": {
@@ -821,7 +821,7 @@
                                         "width": 66.83472833083164,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "时间过滤",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -864,7 +864,7 @@
                                 "height": 20.19619066543107,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Stats Chart",
+                                        "title": "EI 状态分析图",
                                         "type": "component",
                                         "component": "EIAnalyticsStatsChart",
                                         "props": {
@@ -884,7 +884,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "API Request Count"
+                                                    "headerTitle": "API 请求次数"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsStatsChart"
@@ -911,7 +911,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[API Message Count]",
+                                                "title": "[API 请求次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -956,7 +956,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "API Message Count"
+                                                            "headerTitle": "API 请求次数"
                                                         }
                                                     },
                                                     "widgetID": "API-Message-Count"
@@ -976,7 +976,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[API Message Latency]",
+                                                "title": "[API 请求延迟情况]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -1021,7 +1021,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "API Message Latency"
+                                                            "headerTitle": "API 请求延迟情况"
                                                         }
                                                     },
                                                     "widgetID": "API-Message-Latency"
@@ -1043,7 +1043,7 @@
                                 "height": 21.90978006123472,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Table",
+                                        "title": "EI 请求详细信息",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageTable",
                                         "props": {
@@ -1060,7 +1060,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Messages"
+                                                    "headerTitle": "请求详细信息"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageTable"
@@ -1080,7 +1080,7 @@
                                 "height": 34.553902752602,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Flow",
+                                        "title": "EI 信息流图",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageFlow",
                                         "props": {
@@ -1098,7 +1098,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                  "headerTitle": "Message Flow"
+                                                  "headerTitle": "信息流图"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageFlow"
@@ -1118,7 +1118,7 @@
             },
             {
                 "id": "sequence",
-                "name": "Sequence",
+                "name": "序列",
                 "content": [
                     {
                         "type": "column",
@@ -1139,7 +1139,7 @@
                                         "width": 33.165271669168355,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Search Box",
+                                                "title": "EI 查询条件",
                                                 "type": "component",
                                                 "component": "EIAnalyticsSearchBox",
                                                 "props": {
@@ -1175,7 +1175,7 @@
                                         "width": 66.83472833083164,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "时间过滤",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -1219,7 +1219,7 @@
                                 "width": 100.0,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Stats Chart",
+                                        "title": "EI 状态分析图",
                                         "type": "component",
                                         "component": "EIAnalyticsStatsChart",
                                         "props": {
@@ -1239,7 +1239,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Sequence Request Count"
+                                                    "headerTitle": "序列请求次数"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsStatsChart"
@@ -1266,7 +1266,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Sequence Message Count]",
+                                                "title": "[序列请求次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -1311,7 +1311,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Sequence Message Count"
+                                                            "headerTitle": "序列请求次数"
                                                         }
                                                     },
                                                     "widgetID": "Sequence-Message-Count"
@@ -1331,7 +1331,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Sequence Message Latency]",
+                                                "title": "[序列请求延迟情况]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -1376,7 +1376,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Sequence Message Latency"
+                                                            "headerTitle": "序列请求延迟情况"
                                                         }
                                                     },
                                                     "widgetID": "Sequence-Message-Latency"
@@ -1398,7 +1398,7 @@
                                 "height": 21.90978006123472,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Table",
+                                        "title": "EI 请求详细信息",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageTable",
                                         "props": {
@@ -1415,7 +1415,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Messages"
+                                                    "headerTitle": "请求详细信息"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageTable"
@@ -1435,7 +1435,7 @@
                                 "height": 34.55120678966752,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Flow",
+                                        "title": "EI 信息流图",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageFlow",
                                         "props": {
@@ -1453,7 +1453,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                  "headerTitle": "Message Flow"
+                                                  "headerTitle": "信息流图"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageFlow"
@@ -1473,7 +1473,7 @@
             },
             {
                 "id": "endpoint",
-                "name": "Endpoint",
+                "name": "端点",
                 "content": [
                     {
                         "type": "column",
@@ -1494,7 +1494,7 @@
                                         "height": 15.971962755248521,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Search Box",
+                                                "title": "EI 查询条件",
                                                 "type": "component",
                                                 "component": "EIAnalyticsSearchBox",
                                                 "props": {
@@ -1530,7 +1530,7 @@
                                         "width": 66.88513170906766,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "时间过滤",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -1573,7 +1573,7 @@
                                 "height": 29.408555399675294,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Stats Chart",
+                                        "title": "EI 状态分析图",
                                         "type": "component",
                                         "component": "EIAnalyticsStatsChart",
                                         "props": {
@@ -1593,7 +1593,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Endpoint Request Count"
+                                                    "headerTitle": "端点请求次数"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsStatsChart"
@@ -1620,7 +1620,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Endpoint Message Count]",
+                                                "title": "[端点请求次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -1665,7 +1665,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Endpoint Message Count"
+                                                            "headerTitle": "端点请求次数"
                                                         }
                                                     },
                                                     "widgetID": "Endpoint-Message-Count"
@@ -1685,7 +1685,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Endpoint Message Latency]",
+                                                "title": "[端点请求延迟情况]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -1730,7 +1730,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Endpoint Message Latency"
+                                                            "headerTitle": "端点请求延迟情况"
                                                         }
                                                     },
                                                     "widgetID": "Endpoint-Message-Latency"
@@ -1752,7 +1752,7 @@
                                 "height": 28.358746505008604,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Table",
+                                        "title": "EI 请求详细信息",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageTable",
                                         "props": {
@@ -1769,7 +1769,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Messages"
+                                                    "headerTitle": "请求详细信息"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageTable"
@@ -1789,7 +1789,7 @@
             },
             {
                 "id": "inbound",
-                "name": "Inbound Endpoint",
+                "name": "入站端点",
                 "content": [
                     {
                         "type": "column",
@@ -1809,7 +1809,7 @@
                                         "width": 33.06446491269631,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Search Box",
+                                                "title": "EI 查询条件",
                                                 "type": "component",
                                                 "component": "EIAnalyticsSearchBox",
                                                 "props": {
@@ -1846,7 +1846,7 @@
                                         "height": 9.090802872124586,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "时间过滤",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -1892,7 +1892,7 @@
                                 "height": 20.809677862483746,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Stats Chart",
+                                        "title": "EI 状态分析图",
                                         "type": "component",
                                         "component": "EIAnalyticsStatsChart",
                                         "props": {
@@ -1912,7 +1912,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                    "headerTitle": "Inbound Request Count"
+                                                    "headerTitle": "入站端点请求次数"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsStatsChart"
@@ -1939,7 +1939,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Inbound Endpoint Message Count]",
+                                                "title": "[入站端点请求次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -1984,7 +1984,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Inbound Endpoint Message Count"
+                                                            "headerTitle": "入站端点请求次数"
                                                         }
                                                     },
                                                     "widgetID": "Inbound-Endpoint-Message-Count"
@@ -2004,7 +2004,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Inbound Endpoint Message Latency]",
+                                                "title": "[入站端点请求延迟情况]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -2049,7 +2049,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Inbound Endpoint Message Latency"
+                                                            "headerTitle": "入站端点请求延迟情况"
                                                         }
                                                     },
                                                     "widgetID": "Inbound-Endpoint-Message-Latency"
@@ -2071,7 +2071,7 @@
                                 "height": 18.684578894866707,
                                 "content": [
                                     {
-                                        "title": "Messages",
+                                        "title": "请求详细信息",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageTable",
                                         "props": {
@@ -2108,7 +2108,7 @@
                                 "height": 34.57446776272593,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Flow",
+                                        "title": "EI 信息流图",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageFlow",
                                         "props": {
@@ -2129,7 +2129,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                  "headerTitle": "Message Flow"
+                                                  "headerTitle": "信息流图"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageFlow"
@@ -2149,7 +2149,7 @@
             },
             {
                 "id": "message",
-                "name": "Message",
+                "name": "消息",
                 "content": [
                     {
                         "type": "column",
@@ -2163,7 +2163,7 @@
                                 "height": 50.0,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Message Flow",
+                                        "title": "信息流图",
                                         "type": "component",
                                         "component": "EIAnalyticsMessageFlow",
                                         "props": {
@@ -2177,7 +2177,7 @@
                                                 },
                                                 "isGenerated": false,
                                                 "options": {
-                                                  "headerTitle": "Message Flow"
+                                                  "headerTitle": "信息流图"
                                                 }
                                             },
                                             "widgetID": "EIAnalyticsMessageFlow"
@@ -2197,7 +2197,7 @@
                                 "height": 50.0,
                                 "content": [
                                     {
-                                        "title": "EI Analytics Mediator Properties",
+                                        "title": "EI 中介属情分析",
                                         "type": "component",
                                         "component": "EIAnalyticsMediatorProperties",
                                         "props": {
@@ -2234,7 +2234,7 @@
             },
             {
                 "id": "mediator",
-                "name": "Mediator",
+                "name": "中介",
                 "content": [
                     {
                         "type": "row",
@@ -2256,7 +2256,7 @@
                                         "height": 50.0,
                                         "content": [
                                             {
-                                                "title": "EI Analytics Stats Chart",
+                                                "title": "EI 状态分析图",
                                                 "type": "component",
                                                 "component": "EIAnalyticsStatsChart",
                                                 "props": {
@@ -2275,7 +2275,7 @@
                                                         },
                                                         "isGenerated": false,
                                                         "options": {
-                                                            "headerTitle": "Mediator Request Count"
+                                                            "headerTitle": "中介请求次数"
                                                         }
                                                     },
                                                     "widgetID": "EIAnalyticsStatsChart"
@@ -2295,7 +2295,7 @@
                                         "height": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Mediator Message Count]",
+                                                "title": "[中介请求次数]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -2333,7 +2333,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Mediator Message Count"
+                                                            "headerTitle": "中介请求次数"
                                                         }
                                                     },
                                                     "widgetID": "Mediator-Message-Count"
@@ -2362,7 +2362,7 @@
                                         "width": 50.0,
                                         "content": [
                                             {
-                                                "title": "Date Time Range",
+                                                "title": "时间过滤",
                                                 "type": "component",
                                                 "component": "DateRangePicker",
                                                 "props": {
@@ -2403,7 +2403,7 @@
                                         "height": 50.0,
                                         "content": [
                                             {
-                                                "title": "[Mediator Message Latency]",
+                                                "title": "[中介请求延迟情况]",
                                                 "type": "component",
                                                 "component": "UniversalWidget",
                                                 "props": {
@@ -2441,7 +2441,7 @@
                                                         },
                                                         "isGenerated": true,
                                                         "options": {
-                                                            "headerTitle": "Mediator Message Latency"
+                                                            "headerTitle": "中介请求延迟情况"
                                                         }
                                                     },
                                                     "widgetID": "Mediator-Message-Latency"
@@ -2469,7 +2469,7 @@
     "widgets": {
         "generated": [
             {
-                "name": "Inbound Endpoint Message Latency",
+                "name": "入站端点请求延迟情况",
                 "id": "Inbound-Endpoint-Message-Latency",
                 "chartConfig": {
                     "x": "Time",
@@ -2563,7 +2563,7 @@
                 }
             },
             {
-                "name": "Inbound Endpoint Message Count",
+                "name": "入站端点请求次数",
                 "id": "Inbound-Endpoint-Message-Count",
                 "chartConfig": {
                     "x": "Time",
@@ -2651,7 +2651,7 @@
                 }
             },
             {
-                "name": "API Message Latency",
+                "name": "API 请求延迟情况",
                 "id": "API-Message-Latency",
                 "chartConfig": {
                     "x": "Time",
@@ -2745,7 +2745,7 @@
                 }
             },
             {
-                "name": "Proxy Message Latency",
+                "name": "Proxy 请求延迟情况",
                 "id": "Proxy-Message-Latency",
                 "chartConfig": {
                     "x": "Time",
@@ -2839,7 +2839,7 @@
                 }
             },
             {
-                "name": "Overall Message Count",
+                "name": "总体调用次数",
                 "id": "Overall-Message-Count",
                 "chartConfig": {
                     "x": "Time",
@@ -2924,7 +2924,7 @@
                 }
             },
             {
-                "name": "Mediator Message Latency",
+                "name": "中介请求延迟情况",
                 "id": "Mediator-Message-Latency",
                 "chartConfig": {
                     "x": "Time",
@@ -3013,7 +3013,7 @@
                 }
             },
             {
-                "name": "Sequence Message Latency",
+                "name": "序列请求延迟情况",
                 "id": "Sequence-Message-Latency",
                 "chartConfig": {
                     "x": "Time",
@@ -3107,7 +3107,7 @@
                 }
             },
             {
-                "name": "Sequence Message Count",
+                "name": "序列请求次数",
                 "id": "Sequence-Message-Count",
                 "chartConfig": {
                     "x": "Time",
@@ -3195,7 +3195,7 @@
                 }
             },
             {
-                "name": "Endpoint Message Count",
+                "name": "端点请求次数",
                 "id": "Endpoint-Message-Count",
                 "chartConfig": {
                     "x": "Time",
@@ -3283,7 +3283,7 @@
                 }
             },
             {
-                "name": "API Message Count",
+                "name": "API 请求次数",
                 "id": "API-Message-Count",
                 "chartConfig": {
                     "x": "Time",
@@ -3371,7 +3371,7 @@
                 }
             },
             {
-                "name": "Endpoint Message Latency",
+                "name": "端点请求延迟情况",
                 "id": "Endpoint-Message-Latency",
                 "chartConfig": {
                     "x": "Time",
@@ -3465,7 +3465,7 @@
                 }
             },
             {
-                "name": "Mediator Message Count",
+                "name": "中介请求次数",
                 "id": "Mediator-Message-Count",
                 "chartConfig": {
                     "x": "Time",
@@ -3548,7 +3548,7 @@
                 }
             },
             {
-                "name": "Proxy Message Count",
+                "name": "代理请求次数",
                 "id": "Proxy-Message-Count",
                 "chartConfig": {
                     "x": "Time",

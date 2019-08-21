@@ -172,7 +172,7 @@ class EIAnalyticsMessageTable extends Widget {
                     );
             })
             .catch((error) => {
-                console.error("Unable to load configurations of " + this.props.widgetID + " widget.", error);
+                console.error("不能加载小部件 " + this.props.widgetID + " 的配置。", error);
             });
     }
 
